@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | All Good Tissues</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bamboo: '#4a6741',
+                        bambooLight: '#5c7d51',
+                        beige: '#fcfbf9',
+                        charcoal: '#1a1a1a',
+                        sand: '#e8e3d8'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased text-charcoal bg-beige">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass transition-all duration-300 border-b border-gray-200 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="font-serif text-2xl font-bold tracking-wider text-bamboo">ALL GOOD TISSUES</a>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-gray-500 hover:text-bamboo font-medium transition">Home</a>
+                    <a href="about.html" class="text-gray-500 hover:text-bamboo font-medium transition">Our Story</a>
+                    <a href="products.html" class="text-charcoal hover:text-bamboo font-medium transition">Products</a>
+                    <a href="contact.html" class="text-gray-500 hover:text-bamboo font-medium transition">Contact</a>
+                </div>
+                <!-- Mobile Menu -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-charcoal focus:outline-none">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu Panel -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="block px-3 py-2 text-base font-medium text-gray-500">Home</a>
+                <a href="about.html" class="block px-3 py-2 text-base font-medium text-gray-500">Our Story</a>
+                <a href="products.html" class="block px-3 py-2 text-base font-medium text-bamboo">Products</a>
+                <a href="contact.html" class="block px-3 py-2 text-base font-medium text-gray-500">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="pt-40 pb-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-5xl font-serif font-bold text-charcoal mb-4 fade-in-up">The Collection</h1>
+            <p class="text-lg text-gray-500 fade-in-up" style="transition-delay: 100ms;">Responsibly crafted bamboo essentials.</p>
+        </div>
+    </div>
+
+    <!-- Product Grid -->
+    <section class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+            <!-- Product 1 -->
+            <div class="product-card flex flex-col bg-white border border-gray-100 fade-in-up group overflow-hidden">
+                <div class="h-80 bg-sand relative overflow-hidden flex items-center justify-center p-8">
+                     <img src="C:/Users/Dell/.gemini/antigravity/brain/ea9e9034-d4ec-4712-bf57-c123e5f9b737/tissue_products_1775377283833.png" alt="Premium Bamboo Toilet Paper" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-700" />
+                     <div class="absolute top-4 left-4 bg-white text-xs px-3 py-1 font-bold tracking-widest uppercase">Best Seller</div>
+                </div>
+                <div class="p-8 flex-grow flex flex-col">
+                    <h3 class="text-2xl font-serif font-bold mb-2">Premium Bamboo Toilet Paper</h3>
+                    <p class="text-gray-500 text-sm mb-6 flex-grow">Ultra-soft, strong, and wrapped in beautiful eco-friendly packaging.</p>
+                    <button class="w-full py-3 border border-charcoal text-charcoal hover:bg-charcoal hover:text-white transition uppercase text-sm tracking-wider font-semibold">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card flex flex-col bg-white border border-gray-100 fade-in-up group overflow-hidden" style="transition-delay: 100ms;">
+                <div class="h-80 bg-sand relative overflow-hidden flex items-center justify-center p-8">
+                     <img src="C:/Users/Dell/.gemini/antigravity/brain/ea9e9034-d4ec-4712-bf57-c123e5f9b737/tissue_products_1775377283833.png" alt="Premium Bamboo Paper Towels" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-700" />
+                </div>
+                <div class="p-8 flex-grow flex flex-col">
+                    <h3 class="text-2xl font-serif font-bold mb-2">Premium Bamboo Paper Towels</h3>
+                    <p class="text-gray-500 text-sm mb-6 flex-grow">Absorbent and incredibly strong for all household spills.</p>
+                    <button class="w-full py-3 border border-charcoal text-charcoal hover:bg-charcoal hover:text-white transition uppercase text-sm tracking-wider font-semibold">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card flex flex-col bg-white border border-gray-100 fade-in-up group overflow-hidden" style="transition-delay: 200ms;">
+                <div class="h-80 bg-sand relative overflow-hidden flex items-center justify-center p-8">
+                     <img src="C:/Users/Dell/.gemini/antigravity/brain/ea9e9034-d4ec-4712-bf57-c123e5f9b737/hero_tissue_banner_1775377257897.png" alt="Premium Bamboo Tissues" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-700" />
+                </div>
+                <div class="p-8 flex-grow flex flex-col">
+                    <h3 class="text-2xl font-serif font-bold mb-2">Premium Bamboo Tissues</h3>
+                    <p class="text-gray-500 text-sm mb-6 flex-grow">Gentle facial tissues that don't compromise our forests.</p>
+                    <button class="w-full py-3 border border-charcoal text-charcoal hover:bg-charcoal hover:text-white transition uppercase text-sm tracking-wider font-semibold">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card flex flex-col bg-white border border-gray-100 fade-in-up group overflow-hidden">
+                <div class="h-80 bg-gray-100 relative overflow-hidden flex items-center justify-center p-8">
+                     <!-- Placeholder style for variety -->
+                     <img src="C:/Users/Dell/.gemini/antigravity/brain/ea9e9034-d4ec-4712-bf57-c123e5f9b737/tissue_manufacturing_1775377297271.png" alt="Charcoal Deodorizer" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-700 grayscale opacity-80" />
+                     <div class="absolute inset-0 bg-white opacity-20"></div>
+                </div>
+                <div class="p-8 flex-grow flex flex-col z-10 relative bg-white">
+                    <h3 class="text-2xl font-serif font-bold mb-2">Bamboo Charcoal Deodorizer</h3>
+                    <p class="text-gray-500 text-sm mb-6 flex-grow">Natural dehumidifier to keep spaces fresh. Minimalist design.</p>
+                    <button class="w-full py-3 border border-charcoal text-charcoal hover:bg-charcoal hover:text-white transition uppercase text-sm tracking-wider font-semibold">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-card flex flex-col bg-white border border-gray-100 fade-in-up group overflow-hidden" style="transition-delay: 100ms;">
+                <div class="h-80 bg-gray-100 relative overflow-hidden flex items-center justify-center p-8">
+                     <img src="C:/Users/Dell/.gemini/antigravity/brain/ea9e9034-d4ec-4712-bf57-c123e5f9b737/tissue_products_1775377283833.png" alt="Paper Towel Stand" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-700 grayscale opacity-50" />
+                </div>
+                <div class="p-8 flex-grow flex flex-col z-10 relative bg-white">
+                    <h3 class="text-2xl font-serif font-bold mb-2">Premium Towel Stand</h3>
+                    <p class="text-gray-500 text-sm mb-6 flex-grow">Elegant bamboo holder complementing your kitchen aesthetic.</p>
+                    <button class="w-full py-3 border border-charcoal text-charcoal hover:bg-charcoal hover:text-white transition uppercase text-sm tracking-wider font-semibold">Add to Cart</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-charcoal text-white pb-10 pt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm text-gray-500 border-t border-gray-800 pt-8">
+             <p>&copy; <span id="current-year"></span> All Good Tissues. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
